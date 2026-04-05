@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>March & April 2026 Waiting List by Waleed Ashraf</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta
+      name="description"
+      content="A waiting list of applicants of student VISA in German Embassy in Islamabad Pakistan who applied in March and April 2026. List is maintained by Waleed Ashraf, an AI/ML Engineer, Software Developer and Automation Expert portfolio site https://www.waleedashraf9t.com"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 16px;
+        "
+      >
+        <div>
+          <h1>March & April 2026 Waiting List</h1>
+          <p id="totalCount">Total Applicants: 0</p>
+        </div>
+        <div>
+          <select id="linksDropdown">
+            <option value="">Waiting List of Other Months</option>
+            <option
+              value="https://augseptoct25-waiting-list.waleedashraf9t.com/"
+            >
+              Aug, Sept, & Oct 2025
+            </option>
+            <option value="https://novdec25-waiting-list.waleedashraf9t.com/">
+              Nov & Dec 2025
+            </option>
+            <option value="https://janfeb26-waiting-list.waleedashraf9t.com/">
+              Jan & Feb 2026
+            </option>
+          </select>
+        </div>
+
+        <script>
+          document
+            .getElementById("linksDropdown")
+            .addEventListener("change", function (e) {
+              if (e.target.value) {
+                window.open(e.target.value, "_blank");
+                e.target.value = "";
+              }
+            });
+        </script>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 16px">
+        <select id="dateFilter">
+          <option value="all">All Join Dates</option>
+        </select>
+        <button
+          onclick="window.open('https://forms.gle/ysbPtC41uqvbQJyZ9', '_blank')"
+          style="background-color: black; color: #f5f7fa; cursor: pointer"
+        >
+          Submit Your Entry
+        </button>
+      </div>
+    </header>
+
+    <!-- Loading Animation -->
+    <div id="loading">
+      <div class="spinner"></div>
+      <p>Loading data...</p>
+    </div>
+
+    <main id="recordsContainer"></main>
+
+    <footer
+      style="
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #f5f7fa;
+        padding: 16px;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      "
+    >
+      <div style="display: flex; flex-direction: column; align-self: flex-end">
+        <h1>List Maintained by Waleed Ashraf</h1>
+        <span style="display: flex; align-items: center"
+          ><p style="margin: 0">For Queries or Consultation:&nbsp;</p>
+          <a href="https://wa.me/923010222555">+92 301 0222555</a>
+        </span>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-self: flex-end">
+        <h1>For Daily Updates Join WhatsApp Channel</h1>
+        <span style="display: flex; align-items: center">
+          <a href="https://whatsapp.com/channel/0029VbCeE64LdQejEfpDw21k"
+            >Study in Germany (Appointment Updates & Tracking)</a
+          >
+        </span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
